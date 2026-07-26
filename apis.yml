@@ -1,9 +1,26 @@
 aid: enable
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/enable.png
 name: Enable
-description: 'Enable is a company surfaced as a portfolio company of initialized-capital, insight-partners,
-  lightspeed-venture-partners, menlo-ventures, norwest-venture-partners, sierra-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Enable Medicine is a healthcare and life-sciences data company that licenses
+  an integrated, AI-ready index of clinical, spatial, cellular, and molecular data. Its
+  research platform helps biopharma companies, academic institutions, and healthcare providers
+  run spatial-biology analysis — spatial proteomics, cell phenotyping, tumor-microenvironment
+  characterization, immune profiling, and biomarker identification — across 20+ disease areas
+  over harmonized datasets spanning 10M+ patients and 125M+ cells. The platform is delivered
+  through a login-gated web application at app.enablemedicine.com; no public developer API is
+  currently documented. Backed by initialized-capital, insight-partners, lightspeed-venture-partners,
+  menlo-ventures, norwest-venture-partners, and sierra-ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/enable/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -18,10 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Healthcare
+- Life Sciences
+- Spatial Biology
+- Biopharma
+- Data Platform
+- Oncology
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -29,5 +52,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/enable-domain-security.yml
 - type: Website
   url: https://enablemedicine.com/
+- type: Login
+  url: https://app.enablemedicine.com/login
+- type: Support
+  url: https://enablemedicine.com/contact-us
+- type: Blog
+  url: https://enablemedicine.com/blog
+- type: TermsOfService
+  url: https://enablemedicine.com/legal/terms-conditions
+- type: PrivacyPolicy
+  url: https://enablemedicine.com/legal/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
